@@ -1,6 +1,6 @@
-FROM jboss/wildfly:latest
+FROM jboss/wildfly:8.2.1.Final
 
-ENV MODESHAPE_VERSION 4.0.0.Final
+ENV MODESHAPE_VERSION 4.3.0.Final
 
 RUN cd wildfly && curl -o modeshape.zip http://downloads.jboss.org/modeshape/$MODESHAPE_VERSION/modeshape-$MODESHAPE_VERSION-jboss-wf8-dist.zip && unzip -q modeshape.zip && rm modeshape.zip
 
